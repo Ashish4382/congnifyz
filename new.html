@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .click-button{
+    padding: 10px 10px;
+    color: white;
+    background-color: green;
+    font-size: 15px;
+    border: 0 solid;
+    cursor: pointer;
+
+  }
+  .click-button.toggle{
+    background-color: red;
+
+  }
+</style>
+<body>
+    <button onclick="
+      
+      " class="click-button">click me</button>
+
+    <script>
+      const button = document.querySelector('.click-button');
+
+      button.addEventListener('click' , function(){
+
+        button.classList.toggle('toggle');
+        if(button.innerText ==='click me'){
+          button.innerText = 'thanks for clicking'
+        }else{
+          button.innerText = 'click me';
+        }
+      })
+
+  </script>
+</body>
+</html>

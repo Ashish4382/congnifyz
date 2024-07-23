@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level-02-task</title>
+  <link rel="stylesheet" href="02-task.css">
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="sec-container">
+      <input  class="input-class" type="text" placeholder="Please enter your Email">
+
+    <div>
+      <button onclick="
+        changeFont();
+        " class="Submit-button js-submit-button">Submit</button>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    function changeFont(){
+      const buttonElement = document.querySelector('.js-submit-button');
+      buttonElement.innerText = 'Submit'
+      buttonElement.innerHTML = 'submitted';
+    }
+  </script>
+</body>
+</html>

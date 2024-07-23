@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alert notification</title>
+</head>
+<h1>How do you feel being greeted</h1>
+<body>
+  <script>
+      let time = new Date().getHours();
+
+      let welcomeMessage;
+      if(time< 12){
+        welcomeMessage = "A very good morning to you";
+      }else if(time >= 12 && time <19 ){
+        welcomeMessage = "Good afterNoon Buddy";
+  
+      }else{
+        welcomeMessage = "Good night";
+      }
+
+      alert(welcomeMessage);
+  </script>
+</body>
+</html>

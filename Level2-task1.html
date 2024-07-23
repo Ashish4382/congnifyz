@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LEvel 01 task 2</title>
+</head>
+<style>
+   .click-button{
+    padding: 10px 20px;
+    border: 0 solid;
+    
+    background-color: green;
+    border-radius: 5px;
+   }
+   .click-button.toggled{
+    padding: 10px 20px;
+    border:0 solid;
+   
+    background-color: rgb(250, 226, 7);
+    border-radius: 5px;
+   }
+</style>
+<body>
+  <main>
+      <button onclick="
+      
+      " class="js-click-button click-button">click me</button>
+
+        <script>
+        
+          const buttonElement = document.querySelector('.js-click-button');
+
+          buttonElement.addEventListener('click', function(){
+            buttonElement.classList.toggle('toggled');
+
+            if(buttonElement.classList.contains('toggled')){
+              buttonElement.innerHTML = 'thanku for clicking'
+            }else{
+              buttonElement.innerHTML = 'click me';
+            }
+
+          });
+
+       
+
+        </script>
+  </main>
+</body>
+</html>
